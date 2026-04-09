@@ -11,6 +11,15 @@ ball.y = canvas.height/2;
 
 timer = setInterval(animate, interval);
 
+let time = 0;
+
+setInterval(function()
+{
+    time++;
+    document.getElementById("timer").textContent = time
+} , 1000)
+
+
 function animate()
 {
     context.clearRect(0, 0, canvas.width, canvas.height);
