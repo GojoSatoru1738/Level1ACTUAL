@@ -1,4 +1,4 @@
-function Ball() {
+function GameObject() {
     this.x = 0;
     this.y = 0;
     this.width = 50;
@@ -7,7 +7,7 @@ function Ball() {
     this.vx = 7;
     this.vy = 7;
 //ye
-    this.draw = function() {
+    this.drawCircle = function() {
         context.save();
         context.fillStyle = this.color;
         context.beginPath();
